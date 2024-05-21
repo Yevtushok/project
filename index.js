@@ -1,5 +1,10 @@
 const body = document.querySelector("body");
 const thems = document.querySelector(".thems");
+const startButton = document.querySelector('.btn-start');
+const resetButton = document.querySelector('.btn-reset');
+const timerDisplay = document.querySelector('.timer');
+const scoreText = document.querySelector('.score-text-samp');
+const cpsDisplay = document.querySelector('.item-el-text');
 
 thems.addEventListener("click", () => {
   body.classList.toggle("darkmode");
@@ -7,11 +12,7 @@ thems.addEventListener("click", () => {
   } else {
   }
 });
-const startButton = document.querySelector('.btn-start');
-const resetButton = document.querySelector('.btn-reset');
-const timerDisplay = document.querySelector('.timer');
-const scoreText = document.querySelector('.score-text-samp');
-const cpsDisplay = document.querySelector('.item-el-text');
+
 
 let count = 0;
 let bestScore = 0;
@@ -57,5 +58,14 @@ resetButton.addEventListener('click', function() {
   cpsDisplay.textContent = '0';
   count = 0;
   timeLeft = 30;
+  gameActive = false;
+});
+
+
+
+
+
+
+
   gameActive = false;
 });
