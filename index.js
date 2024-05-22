@@ -60,6 +60,31 @@ resetButton.addEventListener('click', function() {
   timeLeft = 30;
   gameActive = false;
 });
+        const cps = (count / 30).toFixed(2);
+        cpsDisplay.textContent = cps;
+        if (count > bestScore) {
+          bestScore = count;
+          scoreText.textContent = bestScore;
+        }
+        gameActive = false;
+      }
+    }, 1000);
+  } else if (gameActive) {
+    count++;
+    this.textContent = count;
+  }
+});
+
+resetButton.addEventListener('click', function() {
+  clearInterval(timer);
+  startButton.textContent = 'Start';
+  startButton.disabled = false;
+  timerDisplay.textContent = '30';
+  cpsDisplay.textContent = '0';
+  count = 0;
+  timeLeft = 30;
+  gameActive = false;
+});
 
 
 
