@@ -10,7 +10,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color: var(--primary-color);
+  transition: 300ms;
+}
 .body {
   width: 400px;
   position: relative;
@@ -18,10 +21,10 @@
   padding-top: 12px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .thems {
+  transition: background-color 300ms;
   background-color: var(--primary-color);
   margin: 0 12px 26px 266px;
   display: flex;
@@ -34,6 +37,7 @@
 }
 
 .thems-indicator {
+  transition: background-color 300ms;
   display: flex;
   justify-content: flex-start;
   width: 68px;
@@ -94,11 +98,8 @@ body.darkmode {
   background-color: var(--dark-color1);
 }
 
-.darkmode .item {
-  background-color: var(--dark-color1);
-}
 .darkmode .item-el {
-   background-color: var(--dark-color1);
+  background-color: var(--dark-color1);
 }
 
 img {
@@ -122,7 +123,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  transition: 300ms;
   border-radius: 15px;
   border: 2px solid #41ead4;
   background: #41ead4;
@@ -142,6 +143,7 @@ img {
 }
 
 .btn-start {
+  transition: background-color 300ms;
   display: block;
   width: 220px;
   height: 220px;
@@ -160,18 +162,13 @@ img {
   border: 81px 34px;
 }
 
-
-.item {
-  
-}
-
-.item-el{
+.item-el {
+  transition: background-color 300ms;
   border-radius: 14px;
   border: solid 2px #89fc00;
   background: #89fc00;
   margin: 0 30px 12px 12px;
   width: 199px;
-  height: 57px;
 }
 .item-el-title {
   display: flex;
@@ -191,6 +188,7 @@ img {
 }
 
 .btn-reset {
+  transition: background-color 300ms;
   margin-left: 12px;
   width: 199px;
   height: 48px;
@@ -203,6 +201,7 @@ img {
 }
 
 .timer {
+  transition: background-color 300ms;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,13 +217,10 @@ img {
 }
 
 @media (min-width: 1920px) {
-
   .body {
     width: 1920px;
     height: 1080px;
     padding-top: 34px;
-    
-
   }
 
   .themsbody {
@@ -267,7 +263,6 @@ img {
   .container {
     width: 1100px;
     margin: 0 auto;
-    
   }
 
   .score {
@@ -295,9 +290,6 @@ img {
     height: 460px;
     border-radius: 460px;
     font-size: 128px;
-
-  }
-  .section {
   }
 
   .item-el {
@@ -324,9 +316,6 @@ img {
     height: 156px;
     font-size: 96px;
     position: relative;
-    margin: 59px;
-  }
-}
     margin: 59px;
   }
 }
