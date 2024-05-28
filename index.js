@@ -8,9 +8,6 @@ const cpsDisplay = document.querySelector('.item-el-text');
 
 thems.addEventListener("click", () => {
   body.classList.toggle("darkmode");
-  if (body.classList.contains("darkmode")) {
-  } else {
-  }
 });
 
 
